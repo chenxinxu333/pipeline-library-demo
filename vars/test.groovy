@@ -8,7 +8,8 @@ class GlobalVars {
    // import com.cleverbuilder.GlobalVars
    // println GlobalVars.foo
 }
-def call() {
+def call(String name = 'human') {
+  echo "Hello, ${name}."
   echo "1111111111"
   echo "Hello, ${GlobalVars.foo}."
 }
