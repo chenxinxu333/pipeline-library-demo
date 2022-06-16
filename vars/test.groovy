@@ -1,16 +1,15 @@
 #!/usr/bin/env groovy
 
-class GlobalVars {
-   static String foo = "bar"
+class GlobalVars1 {
+   static String foo1 = "bar1"
 
    // refer to this in a pipeline using:
    //
    // import com.cleverbuilder.GlobalVars
    // println GlobalVars.foo
 }
-def call(String name = 'human') {
-  echo "Hello, ${name}."
-  echo "1111111111"
-  echo "Hello, ${GlobalVars.foo}."
+def call() {
+  echo "Hello"
+  echo "11111111,${GlobalVars.foo}."
 }
 
