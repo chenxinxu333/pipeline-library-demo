@@ -9,6 +9,7 @@ class GlobalVars {
    // println GlobalVars.foo
 }
 def call() {
+  echo "1111111111"
   echo "Hello, ${GlobalVars.foo}."
 }
 
